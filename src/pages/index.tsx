@@ -65,7 +65,7 @@ const Home: NextPage = () => {
           </span>
         </a>
       </footer>
-      <h1>Small changes 2</h1>
+      <h1>Small changes Another Change</h1>
     </div>
   );
 };
