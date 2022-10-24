@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     "plugin:react/recommended",
     "airbnb-typescript",
+    "next",
     "next/core-web-vitals",
     "prettier",
   ],
@@ -16,8 +17,8 @@ module.exports = {
     project: "tsconfig.json",
     tsconfigRootDir: __dirname,
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["@typescript-eslint"],
   rules: {
-    "no-console": ["warn", { allow: ["warn", "error"] }],
+    "no-console": ["error", { allow: ["warn", "error"] }],
   },
 };
