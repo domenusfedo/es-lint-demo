@@ -1,0 +1,2 @@
+// // Valid! //overWriteTest can be exported as named export cos` .ts files have overrided rules
+// export const overrideTest = () => 1 + 1;

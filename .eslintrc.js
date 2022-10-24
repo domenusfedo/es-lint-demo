@@ -5,7 +5,15 @@ module.exports = {
     es2021: true,
   },
   extends: ['airbnb-base', 'next/core-web-vitals', 'prettier'],
-  overrides: [],
+  overrides: [
+    {
+      files: ['src/pages/**/*', 'src/**/*.stories.tsx'],
+      excludedFiles: '*.ts',
+      rules: {
+        'import/prefer-default-export': 2, // New rules for specific files, directories
+      },
+    },
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -15,5 +23,13 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     'no-console': ['error', { allow: ['warn', 'error'] }],
+    'import/prefer-default-export': 'off',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: ['typeLike', 'enumMember'],
+        format: ['PascalCase'],
+      },
+    ],
   },
 };

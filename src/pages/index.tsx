@@ -65,4 +65,5 @@ const Home: NextPage = () => (
   </div>
 );
 
+// Valid! //All files with .tsx extension must be exported as default
 export default Home;
